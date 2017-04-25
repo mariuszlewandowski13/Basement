@@ -57,12 +57,12 @@ public class LineDeleteScript : MonoBehaviour {
     {
         if (active && !highlighted)
         {
-            GetComponent<HighlightingSystem.Highlighter>().ConstantOn(ApplicationStaticData.toolsHighligthing);
+            
             highlighted = true;
         }
         else if (!active && highlighted)
         {
-            GetComponent<HighlightingSystem.Highlighter>().ConstantOff();
+            
             highlighted = false;
         }
 

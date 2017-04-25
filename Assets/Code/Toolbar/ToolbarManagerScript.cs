@@ -36,6 +36,8 @@ public class ToolbarManagerScript : MonoBehaviour {
 
     private bool toolbarRotation;
 
+
+    private bool filled;
     #endregion
 
     #region Methods
@@ -48,11 +50,21 @@ public class ToolbarManagerScript : MonoBehaviour {
         colorsBar.SetActive(false);
 
         CreateToolsObjects();
-        FillToolsObjects();
+        
 
         MainBar();
         keyboard.SetActive(false);
         
+    }
+
+    private void Update()
+    {
+        if (!filled && ApplicationLoadScript.isLoaded)
+        {
+            FillToolsObjects();
+            MainBar();
+            filled = true;
+        }
     }
 
 
@@ -76,7 +88,7 @@ public class ToolbarManagerScript : MonoBehaviour {
         toolsObjects[3] = new ToolsButtons(table4, brushIcon, true,  false,3);
         toolsObjects[4] = new ToolsButtons(table8, Shapes3DIcon, true, true,4);
         toolsObjects[5] = new ToolsButtons(table7, textsIcon, true, true,5);
-        toolsObjects[7] = new ToolsButtons(null, googleIcon, false, true,6, 2);
+        toolsObjects[6] = new ToolsButtons(null, googleIcon, false, true,6, 2);
     }
 
     private SceneObject[] LoadImages()
@@ -144,12 +156,12 @@ public class ToolbarManagerScript : MonoBehaviour {
     {
         SceneObject[] brushes = new SceneObject[6];
         int index = 0;
+        brushes[index++] = new LineDrawingObject(Color.red, 0);
+        brushes[index++] = new LineDrawingObject(Color.red, 1);
+        brushes[index++] = new LineDrawingObject(Color.red, 2);
         brushes[index++] = new LineDrawingObject(Color.red, 3);
         brushes[index++] = new LineDrawingObject(Color.red, 4);
         brushes[index++] = new LineDrawingObject(Color.red, 5);
-        brushes[index++] = new LineDrawingObject(Color.red, 6);
-        brushes[index++] = new LineDrawingObject(Color.red, 7);
-        brushes[index++] = new LineDrawingObject(Color.red, 8);
         return brushes;
     }
 

@@ -28,10 +28,8 @@ public class ToolsButtons : ToolsObject {
     public delegate void SceneObjectsLoaded();
     public event SceneObjectsLoaded newSceneObjectsList;
 
-    private bool searchGiphy;
     private bool searchGoogle;
 
-    private object searchGiphyLock = new object();
     private object searchGoogleLock = new object();
     #endregion
 
@@ -71,12 +69,6 @@ public class ToolsButtons : ToolsObject {
             searchBox.GetComponent<TextMesh>().text = searchText;
             keyboard.GetComponent<KeyboardScript>().NewCharAdded += OnCharAdded;
         }
-        else if (sourceForSceneObjects == 3)
-        {
-            Vector3 pos = HelperFunctionsScript.GetCameraOppositePosition(1.0f);
-            pos.y += 0.5f;
-            GameObject.Find("Player").GetComponent<ObjectSpawnerScript>().SpawnObject(new BrowserObject(ApplicationStaticData.firstPage), pos, new Quaternion(), new Vector3(1.0f, 1.0f, 1.0f), controller, true);
-        }
 
     }
 
@@ -96,11 +88,8 @@ public class ToolsButtons : ToolsObject {
         else if (newChar == "done")
         {
             keyboard.GetComponent<KeyboardScript>().NewCharAdded -= OnCharAdded;
-            if (sourceForSceneObjects == 1)
-            {
-                SearchGiphy();
-            }
-            else if (sourceForSceneObjects == 2)
+            
+             if (sourceForSceneObjects == 2)
             {
                 SearchGoogle();
             }
@@ -115,19 +104,6 @@ public class ToolsButtons : ToolsObject {
     }
 
 
-    public void SearchGiphy()
-    {
-        lock(searchGiphyLock)
-        {
-            searchGiphy = true;
-            KeyboardHandlerScript.CloseKeyBoard();
-            KeyboardHandlerScript.CloseSearchBox();
-
-            GameObject.Find("Player").transform.FindChild("Toolbar").GetComponent<GiphyCustomSearch>().resultReady += GetResultGiphy;
-            GameObject.Find("Player").transform.FindChild("Toolbar").GetComponent<GiphyCustomSearch>().Search(searchText);
-        }
-    }
-
     public void SearchGoogle()
     {
         lock (searchGoogleLock)
@@ -140,21 +116,6 @@ public class ToolsButtons : ToolsObject {
             GameObject.Find("Player").transform.FindChild("Toolbar").GetComponent<GoogleCustomSearch>().Search(searchText);
         }
     }
-
-    public void GetResultGiphy()
-    {
-        lock (searchGiphyLock)
-        {
-            searchGiphy = false;
-            GameObject.Find("Player").transform.FindChild("Toolbar").GetComponent<GiphyCustomSearch>().resultReady -= GetResultGiphy;
-            sceneObjects = GameObject.Find("Player").transform.FindChild("Toolbar").GetComponent<GiphyCustomSearch>().videos.ToArray();
-
-            if (newSceneObjectsList != null)
-            {
-                newSceneObjectsList();
-            }
-        }
-}
 
     public void GetResultGoogle()
     {
@@ -179,14 +140,6 @@ public class ToolsButtons : ToolsObject {
             {
                 searchGoogle = false;
                 GameObject.Find("Player").transform.FindChild("Toolbar").GetComponent<GoogleCustomSearch>().resultReady -= GetResultGoogle;
-            }
-        }
-        lock (searchGiphyLock)
-        {
-            if (searchGiphy)
-            {
-                searchGiphy = false;
-                GameObject.Find("Player").transform.FindChild("Toolbar").GetComponent<GiphyCustomSearch>().resultReady -= GetResultGiphy;
             }
         }
     }

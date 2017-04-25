@@ -61,7 +61,7 @@ public static class LoadManager {
             master.GetComponent<ServerSaveLoadScript>().LoadDb(LoadResultFromString, ApplicationStaticData.roomToConnectName);
         }
         else {
-            Debug.Log("Brak skryptu ServerSaveLoadScript!!!");
+            Debug.Log("Missing ServerSaveLoadScript!!!");
         }
 
     }
@@ -87,20 +87,14 @@ public static class LoadManager {
                 case "TextObject":
                     LoadTextObject(row);
                     break;
-                case "VideoObject":
-                    LoadVideoObject(row);
-                    break;
                 case "SeparatorObject":
                     LoadSeparatorObject(row);
-                    break;
-                case "BrowserObject":
-                    LoadBrowserObject(row);
                     break;
                 case "LineObject":
                     StartLoadLineObject(row);
                     break;
                 default:
-                    Debug.Log("Nieobsługiwany typ obiektu! " + row[1]);
+                   // Debug.Log("Bad option! ");
                     break;
             }
         }
@@ -125,16 +119,8 @@ public static class LoadManager {
 
         foreach (GameObject gameObject in objectsToDestroy)
         {
-            if (gameObject.name != "PhotoSphereEnviroment")
-            {
-                GameObject.Destroy(gameObject);
-            }
-            else
-            {
-                gameObject.GetComponent<Renderer>().material = null;
-                gameObject.GetComponent<PhotoSphereScript>().isPhotoSphereSet = false;
-            }
-            
+            GameObject.Destroy(gameObject);
+
         }
     }
 
@@ -171,15 +157,6 @@ public static class LoadManager {
         photoSphereObject.saved = true;
     }
 
-    private static void LoadVideoObject(string[] row)
-    {
-        //PhotoSphere photoSphereObject = JsonUtility.FromJson<PhotoSphere>(jsonObject);
-        VideoObject vid = new VideoObject(row);
-        GameObject result = objectSpawner.SpawnVideoObject(vid);
-        result.GetComponent<PhotonView>().viewID = vid.PhotonViewID;
-        result.GetComponent<PhotonView>().instantiationId = vid.PhotonViewID;
-        vid.saved = true;
-    }
 
     private static void LoadShape3DObject(string [] row)
     {
@@ -189,16 +166,6 @@ public static class LoadManager {
         result.GetComponent<PhotonView>().viewID = shape3DObject.PhotonViewID;
         result.GetComponent<PhotonView>().instantiationId = shape3DObject.PhotonViewID;
         shape3DObject.saved = true;
-    }
-
-    private static void LoadBrowserObject(string[] row)
-    {
-        //Shape3DObject shape3DObject = JsonUtility.FromJson<Shape3DObject>(jsonObject);
-        BrowserObject browserObject = new BrowserObject(row);
-        GameObject result = objectSpawner.SpawnBrowserObject(browserObject);
-        result.GetComponent<PhotonView>().viewID = browserObject.PhotonViewID;
-        result.GetComponent<PhotonView>().instantiationId = browserObject.PhotonViewID;
-        browserObject.saved = true;
     }
 
     private static void LoadTextObject(string []  row)

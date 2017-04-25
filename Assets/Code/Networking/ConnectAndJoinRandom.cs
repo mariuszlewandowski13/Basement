@@ -32,9 +32,6 @@ public class ConnectAndJoinRandom : Photon.MonoBehaviour
 
     public virtual void Start()
     {
-        // PhotonNetwork.autoJoinLobby = false;    //no need to join a lobby to get the list of rooms.
-        //PhotonNetwork.isMessageQueueRunning = false;
-        // PhotonNetwork.lobby = new TypedLobby("basement", LobbyType.Default);
     }
 
     public virtual void Update()
@@ -44,17 +41,13 @@ public class ConnectAndJoinRandom : Photon.MonoBehaviour
         if (ConnectInUpdate && AutoConnect && !PhotonNetwork.connected && SaveLoadManager.isLoaded)
         {
 
-
             ConnectInUpdate = false;
-            //PhotonNetwork.ConnectToRegion(CloudRegionCode.eu, Version + "." + SceneManagerHelper.ActiveSceneBuildIndex);
-            //PhotonNetwork.ConnectToMaster()
             PhotonNetwork.ConnectUsingSettings(Version + "." + SceneManagerHelper.ActiveSceneBuildIndex);
         }
 
 
-        if (!loaded)
+        if (!loaded && ApplicationLoadScript.isLoaded)
         {
-
             GetComponent<SaveLoadManager>().LoadGame();
             loaded = true;
         }

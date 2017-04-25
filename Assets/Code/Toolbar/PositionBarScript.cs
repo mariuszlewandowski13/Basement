@@ -39,15 +39,6 @@ public class PositionBarScript : MonoBehaviour {
         toolbar = transform.parent.parent.gameObject;
     }
 
-    void Update()
-    {
-        if (active && GetComponent<HighlightingSystem.Highlighter>() != null)
-        {
-            GetComponent<HighlightingSystem.Highlighter>().SeeThroughOff();
-            GetComponent<HighlightingSystem.Highlighter>().On();
-        }
-    }
-
     private void ControllerCollision(GameObject gameObj, bool isEnter)
     {
         if (isEnter && !active)

@@ -1,0 +1,243 @@
+fileFormatVersion: 2
+guid: 2c6d4360d5177be49aebf027dde04aa7
+timeCreated: 1471548242
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: '1 den roi '
+    100002: Box001
+    100004: Box003
+    100006: Box004
+    100008: Box005
+    100010: Box006
+    100012: Box007
+    100014: Box008
+    100016: Box009
+    100018: Box010
+    100020: Box011
+    100022: Box012
+    100024: Box013
+    100026: Box014
+    100028: Box015
+    100030: Box016
+    100032: Box017
+    100034: Box018
+    100036: Box019
+    100038: Box020
+    100040: Cylinder14
+    100042: diesel_roc
+    100044: drzwi
+    100046: Group22906
+    100048: Group22907
+    100050: Group22908
+    100052: Group22909
+    100054: Group22910
+    100056: Group22911
+    100058: Group22912
+    100060: Group22913
+    100062: Line215
+    100064: Line221
+    100066: Line222
+    100068: Line223
+    100070: Plane003
+    100072: //RootNode
+    100074: szyba
+    100076: szyba001
+    100078: szyba002
+    100080: VRayLight0
+    400000: '1 den roi '
+    400002: Box001
+    400004: Box003
+    400006: Box004
+    400008: Box005
+    400010: Box006
+    400012: Box007
+    400014: Box008
+    400016: Box009
+    400018: Box010
+    400020: Box011
+    400022: Box012
+    400024: Box013
+    400026: Box014
+    400028: Box015
+    400030: Box016
+    400032: Box017
+    400034: Box018
+    400036: Box019
+    400038: Box020
+    400040: Cylinder14
+    400042: diesel_roc
+    400044: drzwi
+    400046: Group22906
+    400048: Group22907
+    400050: Group22908
+    400052: Group22909
+    400054: Group22910
+    400056: Group22911
+    400058: Group22912
+    400060: Group22913
+    400062: Line215
+    400064: Line221
+    400066: Line222
+    400068: Line223
+    400070: Plane003
+    400072: //RootNode
+    400074: szyba
+    400076: szyba001
+    400078: szyba002
+    400080: VRayLight0
+    2300000: '1 den roi '
+    2300002: Box001
+    2300004: Box003
+    2300006: Box004
+    2300008: Box005
+    2300010: Box006
+    2300012: Box007
+    2300014: Box008
+    2300016: Box009
+    2300018: Box010
+    2300020: Box011
+    2300022: Box012
+    2300024: Box013
+    2300026: Box014
+    2300028: Box015
+    2300030: Box016
+    2300032: Box017
+    2300034: Box018
+    2300036: Box019
+    2300038: Box020
+    2300040: Cylinder14
+    2300042: diesel_roc
+    2300044: drzwi
+    2300046: Line215
+    2300048: Line221
+    2300050: Line222
+    2300052: Line223
+    2300054: Plane003
+    2300056: szyba
+    2300058: szyba001
+    2300060: szyba002
+    3300000: '1 den roi '
+    3300002: Box001
+    3300004: Box003
+    3300006: Box004
+    3300008: Box005
+    3300010: Box006
+    3300012: Box007
+    3300014: Box008
+    3300016: Box009
+    3300018: Box010
+    3300020: Box011
+    3300022: Box012
+    3300024: Box013
+    3300026: Box014
+    3300028: Box015
+    3300030: Box016
+    3300032: Box017
+    3300034: Box018
+    3300036: Box019
+    3300038: Box020
+    3300040: Cylinder14
+    3300042: diesel_roc
+    3300044: drzwi
+    3300046: Line215
+    3300048: Line221
+    3300050: Line222
+    3300052: Line223
+    3300054: Plane003
+    3300056: szyba
+    3300058: szyba001
+    3300060: szyba002
+    4300000: Box001
+    4300002: Box003
+    4300004: Box004
+    4300006: Box005
+    4300008: Box006
+    4300010: Box007
+    4300012: Box008
+    4300014: Box009
+    4300016: Box010
+    4300018: Box011
+    4300020: Box012
+    4300022: szyba
+    4300024: szyba002
+    4300026: Box014
+    4300028: Box015
+    4300030: Line215
+    4300032: Line221
+    4300034: Cylinder14
+    4300036: Line222
+    4300038: Line223
+    4300040: '1 den roi '
+    4300042: drzwi
+    4300044: Box017
+    4300046: Box018
+    4300048: Box019
+    4300050: diesel_roc
+    4300052: Plane003
+    4300054: Box020
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleRotations: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

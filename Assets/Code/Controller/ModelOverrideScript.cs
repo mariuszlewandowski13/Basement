@@ -13,9 +13,9 @@ public class ModelOverrideScript : MonoBehaviour {
     #region Methods
 
     void Update () {
-        if (objectToDeactive.GetComponent<Renderer>() != null)
+        if (objectToDeactive.GetComponentInChildren<Renderer>() != null)
         {
-            Destroy(objectToDeactive.GetComponent<Renderer>());
+            Destroy(objectToDeactive);
             Destroy(this);
         }
 	}

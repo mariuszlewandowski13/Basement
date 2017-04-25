@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 3383008}
   - component: {fileID: 2337598}
   - component: {fileID: 11448856}
-  - component: {fileID: 11468592}
   - component: {fileID: 11467964}
   - component: {fileID: 11471982}
   - component: {fileID: 6579216}
@@ -165,17 +164,6 @@ MonoBehaviour:
     actualRatio: 0
     color: {r: 0, g: 0, b: 0, a: 0}
     shape3DObjectNumber: 0
---- !u!114 &11468592
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 118980}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 67d4de287b46eb34e83a61e4f9115070, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &11471982
 MonoBehaviour:
   m_ObjectHideFlags: 1

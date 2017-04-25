@@ -60,7 +60,6 @@ GameObject:
   - component: {fileID: 11483382}
   - component: {fileID: 2314430}
   - component: {fileID: 6507344}
-  - component: {fileID: 11436516}
   - component: {fileID: 114478924224796610}
   m_Layer: 8
   m_Name: Right
@@ -287,7 +286,6 @@ GameObject:
   - component: {fileID: 2340882}
   - component: {fileID: 11426890}
   - component: {fileID: 6586488}
-  - component: {fileID: 11451084}
   - component: {fileID: 114556759321039020}
   m_Layer: 8
   m_Name: BottomRight
@@ -420,7 +418,6 @@ GameObject:
   - component: {fileID: 6556626}
   - component: {fileID: 11411332}
   - component: {fileID: 11477258}
-  - component: {fileID: 11431646}
   - component: {fileID: 11464954}
   - component: {fileID: 11436190}
   - component: {fileID: 11488162}
@@ -510,7 +507,6 @@ GameObject:
   - component: {fileID: 6533378}
   - component: {fileID: 11451628}
   - component: {fileID: 2367832}
-  - component: {fileID: 11470242}
   - component: {fileID: 114278036064931638}
   m_Layer: 8
   m_Name: Left
@@ -823,7 +819,6 @@ GameObject:
   - component: {fileID: 2377500}
   - component: {fileID: 11466924}
   - component: {fileID: 6588692}
-  - component: {fileID: 11498120}
   - component: {fileID: 114852455330128830}
   m_Layer: 8
   m_Name: BottomLeft
@@ -875,7 +870,6 @@ GameObject:
   - component: {fileID: 6521810}
   - component: {fileID: 11404802}
   - component: {fileID: 2303072}
-  - component: {fileID: 11475870}
   - component: {fileID: 114850553617761650}
   m_Layer: 8
   m_Name: Bottom
@@ -961,7 +955,6 @@ GameObject:
   - component: {fileID: 2363282}
   - component: {fileID: 11406564}
   - component: {fileID: 6524868}
-  - component: {fileID: 11427758}
   - component: {fileID: 114191680100249248}
   m_Layer: 8
   m_Name: TopRight
@@ -981,7 +974,6 @@ GameObject:
   - component: {fileID: 6589130}
   - component: {fileID: 11400900}
   - component: {fileID: 2329834}
-  - component: {fileID: 11419774}
   - component: {fileID: 114684911868555588}
   m_Layer: 8
   m_Name: Top
@@ -1101,7 +1093,6 @@ GameObject:
   - component: {fileID: 2301654}
   - component: {fileID: 11428408}
   - component: {fileID: 6562538}
-  - component: {fileID: 11481212}
   - component: {fileID: 114897885654955742}
   m_Layer: 8
   m_Name: TopLeft
@@ -3824,18 +3815,6 @@ MonoBehaviour:
   instantiationId: -1
   currentMasterID: -1
   isRuntimeInstantiated: 0
---- !u!114 &11419774
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 185070}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 956fa3e6ed2d84da48cccbdf5f5461d6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  seeThrough: 0
 --- !u!114 &11426890
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3849,18 +3828,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isSelected: 0
   collision: 0
---- !u!114 &11427758
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 185052}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 956fa3e6ed2d84da48cccbdf5f5461d6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  seeThrough: 0
 --- !u!114 &11428408
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3886,17 +3853,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canFade: 1
---- !u!114 &11431646
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 143396}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 67d4de287b46eb34e83a61e4f9115070, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &11436190
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3908,30 +3864,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d46d35552b6b80647ab11ff9076a23ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &11436516
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 102860}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 956fa3e6ed2d84da48cccbdf5f5461d6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  seeThrough: 0
---- !u!114 &11451084
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 132048}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 956fa3e6ed2d84da48cccbdf5f5461d6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  seeThrough: 0
 --- !u!114 &11451628
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3984,30 +3916,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   prevParent: {fileID: 0}
   canDuplicate: 1
---- !u!114 &11470242
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 148278}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 956fa3e6ed2d84da48cccbdf5f5461d6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  seeThrough: 0
---- !u!114 &11475870
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 176750}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 956fa3e6ed2d84da48cccbdf5f5461d6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  seeThrough: 0
 --- !u!114 &11477258
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -4022,18 +3930,6 @@ MonoBehaviour:
   active: 0
   treshold: 0.05
   canMove: 0
---- !u!114 &11481212
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 198546}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 956fa3e6ed2d84da48cccbdf5f5461d6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  seeThrough: 0
 --- !u!114 &11483382
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -4072,18 +3968,6 @@ MonoBehaviour:
     text: ONE SMALL\n STEP FOR MAN\n ONE GIANT LEAP\n FOR MANKIND
     prefabName: 
   isSet: 0
---- !u!114 &11498120
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 173668}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 956fa3e6ed2d84da48cccbdf5f5461d6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  seeThrough: 0
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1

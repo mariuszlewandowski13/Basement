@@ -13,21 +13,17 @@ public class ApplicationLoadScript : MonoBehaviour {
     #region Private Properties
 
     private string message;
-    private bool loading = false;
-    public static bool loadingLogin = false;
+    private static bool loading = false;
     private bool loadFirstLevel = false;
     private bool canLoad = false;
     private bool loadingError = false;
-    private bool compared = false;
+    private static bool compared = false;
 
 
     private bool userImagesFromServerLoaded = false;
     private bool userImagesLocalLoaded = false;
 
     private bool canCheckImagesForlder = false;
-    private object emailCheckLock = new object();
-
-    private float time = 0.0f;
 
     private List<ImagesInfo> userImagesOnTheServer;
     private List<ImagesInfo> userImagesLocaly;
@@ -35,6 +31,7 @@ public class ApplicationLoadScript : MonoBehaviour {
     private int sendedCounter = 0;
     private object sendedCounterLock = new object();
 
+    public static bool isLoaded = false;
 
     #endregion
 
@@ -48,13 +45,12 @@ public class ApplicationLoadScript : MonoBehaviour {
 
 
     void Awake () {
-        ApplicationStaticData.LoadAllData();
+        
 	}
 
 	void Update () {
         if (SteamManager.Initialized && !loading)
         {
-            RotateCameraToLogo();
             loading = true;
             ApplicationStaticData.userID =  SteamUser.GetSteamID().ToString();
             ApplicationStaticData.userName = SteamFriends.GetPersonaName();
@@ -65,22 +61,14 @@ public class ApplicationLoadScript : MonoBehaviour {
         if (loadFirstLevel && canLoad)
         {
             Debug.Log("Loading main room");
-            //RenderSettings.skybox = loadingMaterial;
             loadFirstLevel = false;
             if (PhotonNetwork.inRoom)
             {
                 PhotonNetwork.Disconnect();
             }
-
-            //if (TutorialScript.tutorialActive)
-            //{
-                ApplicationStaticData.roomToConnectName = ApplicationStaticData.userRoom;
-                SceneManager.LoadSceneAsync(ApplicationStaticData.userScene);
-           // }
-            //else {
-            //    ApplicationStaticData.roomToConnectName = ApplicationStaticData.worldRoomName;
-            //    SceneManager.LoadSceneAsync(ApplicationStaticData.worldSceneName);
-            //}
+            ApplicationStaticData.roomToConnectName = ApplicationStaticData.userRoom;
+            ApplicationStaticData.LoadAllData();
+            isLoaded = true;
         }
 
         if (loadFirstLevel && canCheckImagesForlder)
@@ -94,14 +82,6 @@ public class ApplicationLoadScript : MonoBehaviour {
         {
             CompareImagesFolders();
             compared = true;
-            //canLoad = true;
-        }
-
-        if (loadingLogin && Time.time - time > 5.0f)
-        {
-            CheckUserEmail();
-  
-            time = Time.time;
         }
 
         if (loadingError)
@@ -117,14 +97,6 @@ public class ApplicationLoadScript : MonoBehaviour {
         form.AddField("userName", ApplicationStaticData.userName);
         WWW w = new WWW("http://serwer1642668.home.pl/BASEMENT/scripts/GetUserData.php", form);
         StartCoroutine(loadUserDataFromDb(w));
-    }
-
-    private void CheckUserEmail()
-    {
-        WWWForm form = new WWWForm();
-        form.AddField("userID", ApplicationStaticData.userID);
-        WWW w = new WWW("http://serwer1642668.home.pl/BASEMENT/scripts/GetUserEmail.php", form);
-        StartCoroutine(checkUserEmail(w));
     }
 
     IEnumerator loadUserDataFromDb(WWW w)
@@ -148,38 +120,6 @@ public class ApplicationLoadScript : MonoBehaviour {
             
                loadFirstLevel = true;
                canCheckImagesForlder = true;
-        }
-        else {
-            loadingError = true;
-        }
-    }
-
-    IEnumerator checkUserEmail(WWW w)
-    {
-        yield return w;
-        if (w.error == null)
-        {
-            message = w.text;
-        }
-        else {
-            message = "ERROR: " + w.error + "\n";
-        }
-        // Debug.Log(message);
-        if (w.error == null)
-        {
-            lock(emailCheckLock)
-            {
-                string row = null;
-                row = message;
-                if (row != "" && loadingLogin == true && !canLoad)
-                {
-                    loadingLogin = false;
-                    loadFirstLevel = true;
-                    canCheckImagesForlder = true;
-                }
-
-                Debug.Log(row);
-            }
         }
         else {
             loadingError = true;
@@ -220,12 +160,6 @@ public class ApplicationLoadScript : MonoBehaviour {
         userImagesFromServerLoaded = true;
     }
 
-    private void RotateCameraToLogo()
-    {
-        Vector3 rotationCamera = GameObject.Find("[CameraRig]").transform.FindChild("Camera (eye)").rotation.eulerAngles;
-        GameObject.Find("[CameraRig]").transform.Rotate(0.0f, -rotationCamera.y, 0.0f);
-    }
-
     private void LoadLocalUserImagesFolder()
     {
         userImagesLocaly = ApplicationStaticData.GetUserImagesInfo();
@@ -260,7 +194,6 @@ public class ApplicationLoadScript : MonoBehaviour {
                 }
                 if (!isOnServer)
                 {
-                    //Debug.Log("NotOnServer");
                     sendImagesOnServer.Add(imgLocal);
                 }
             }

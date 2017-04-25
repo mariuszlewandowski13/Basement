@@ -10,10 +10,6 @@ public class OnLoadRoomLoadingScript : MonoBehaviour {
 
     private bool created = false;
 
-    private bool isToolbarActiveCheck = false;
-
-    private bool tutorialStarted = false;
-
     private bool controllersLoaded;
 
     #endregion
@@ -22,7 +18,7 @@ public class OnLoadRoomLoadingScript : MonoBehaviour {
 
     void Awake()
     {
-        ApplicationStaticData.LoadAllData();
+        //ApplicationStaticData.LoadAllData();
     }
 
     void Update()

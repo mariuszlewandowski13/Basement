@@ -17,7 +17,6 @@ public static class ToolbarMiniatureManager {
             GameObject.Destroy(owner.transform.Find("TileMiniature").gameObject);
         }
 
-
         if (miniaturedObject is ImageObject)
         {
             result = CreateImageMiniature(owner, (ImageObject)miniaturedObject);
@@ -26,17 +25,9 @@ public static class ToolbarMiniatureManager {
         {
             result =  CreateShapeMiniature(owner, (ShapeObject)miniaturedObject);
         }
-        else if (miniaturedObject is VideoObject)
-        {
-            result = CreateVideoMiniature(owner, (VideoObject)miniaturedObject);
-        }
         else if (miniaturedObject is PhotoSphere)
         {
             result = CreatePhotoSphereMiniature(owner, (PhotoSphere)miniaturedObject);
-        }
-        else if (miniaturedObject is AudioObject)
-        {
-            result = CreateAudioMiniature(owner, (AudioObject)miniaturedObject);
         }
         else if (miniaturedObject is TextGroupObject)
         {
@@ -55,11 +46,7 @@ public static class ToolbarMiniatureManager {
             result = Create3DShapeObjectMiniature(owner, (Shape3DObject)miniaturedObject);
         }
 
-        if (!(miniaturedObject is VideoObject))
-        {
-            SetNewMiniatureRotation(result);
-        }
-        
+        SetNewMiniatureRotation(result);
 
         return result;
     }
@@ -72,7 +59,6 @@ public static class ToolbarMiniatureManager {
         newObject.name = "TileMiniature";
         newObject.GetComponent<ShapeMiniatureScript>().SetMiniatureShapeObject(shape);
         newObject.transform.localRotation = new Quaternion();
-        //newObject.transform.position -= new Vector3(0.0f, 0.02f, 0.0f);
         return newObject;
     }
 
@@ -84,26 +70,6 @@ public static class ToolbarMiniatureManager {
         newObject.name = "TileMiniature";
         newObject.GetComponent<ImageMiniatureScript>().SetMiniatureImageObject(img);
         newObject.transform.localRotation = new Quaternion();
-       // newObject.transform.position -= new Vector3(0.0f, 0.02f,0.0f);
-        return newObject;
-    }
-
-    private static GameObject CreateVideoMiniature(GameObject owner, VideoObject video)
-    {
-        Object olObject = GameObject.Find("Player").GetComponent<MiniaturesObjects>().videoMiniature;
-        GameObject newObject = (GameObject)GameObject.Instantiate(olObject, owner.transform.position, owner.transform.rotation);
-
-        newObject.transform.parent = owner.transform;
-        newObject.transform.Rotate(90.0f,180.0f, 60.0f);
-
-        newObject.name = "TileMiniature";
-        newObject.GetComponent<VideoMiniatureScript>().SetMiniatureVideoObject(video);
-       // newObject.transform.localRotation = new Quaternion();
-        
-
-       
-
-        // newObject.transform.position -= new Vector3(0.0f, 0.02f, 0.0f);
         return newObject;
     }
 
@@ -119,30 +85,6 @@ public static class ToolbarMiniatureManager {
         return newObject;
     }
 
-    private static GameObject CreateAudioMiniature(GameObject owner, AudioObject audio)
-    {
-        Object olObject = GameObject.Find("Player").GetComponent<MiniaturesObjects>().audioMiniature;
-        GameObject newObject = (GameObject)GameObject.Instantiate(olObject, owner.transform.position, new Quaternion());
-        newObject.transform.parent = owner.transform;
-        newObject.name = "TileMiniature";
-        newObject.transform.Find("Audio Source").GetComponent<AudioScript>().SetAudioSource(audio);
-        newObject.transform.localRotation = new Quaternion();
-        //newObject.transform.position -= new Vector3(0.0f, 0.02f, 0.0f);
-        return newObject;
-    }
-
-    //private static GameObject CreateTextMiniature(GameObject owner, TextObject text)
-    //{
-    //    Object olObject = new Object();//= GameObject.Find("Player").GetComponent<MiniaturesObjects>().textMiniature;
-    //    GameObject newObject = (GameObject)GameObject.Instantiate(olObject, owner.transform.position, new Quaternion());
-    //    newObject.transform.parent = owner.transform;
-    //    newObject.name = "TileMiniature";
-    //    newObject.GetComponent<TextMiniatureScript>().SetTextObject(text);
-    //    newObject.transform.localRotation = new Quaternion();
-    //   // newObject.transform.position -= new Vector3(0.0f, 0.02f, 0.0f);
-    //    return newObject;
-    //}
-
     private static GameObject CreateTextGroupMiniature(GameObject owner, TextGroupObject text)
     {
         GameObject olObject = GameObject.Find("Player").GetComponent<MiniaturesObjects>().txtMiniatures[text.textGroupObjectNumber];
@@ -151,7 +93,6 @@ public static class ToolbarMiniatureManager {
         newObject.name = "TileMiniature";
         newObject.transform.localRotation = new Quaternion();
         newObject.GetComponent<TextGroupMiniatureScript>().SetTextGroup(text);
-        // newObject.transform.position -= new Vector3(0.0f, 0.02f, 0.0f);
         return newObject;
     }
 
@@ -163,7 +104,6 @@ public static class ToolbarMiniatureManager {
         newObject.name = "TileMiniature";
         newObject.GetComponent<DrawingLinesMiniatureScript>().SetMiniatureDrawerObject(line);
         newObject.transform.localRotation = new Quaternion();
-       // newObject.transform.position -= new Vector3(0.0f, 0.02f, 0.0f);
         return newObject;
     }
 
@@ -178,7 +118,6 @@ public static class ToolbarMiniatureManager {
         }
        
         newObject.transform.localRotation = owner.transform.localRotation;
-       // newObject.transform.position -= new Vector3(0.0f, 0.02f, 0.0f);
         return newObject;
     }
 
@@ -194,11 +133,6 @@ public static class ToolbarMiniatureManager {
         newObject.transform.parent = owner.transform;
         newObject.name = "TileMiniature";
         newObject.GetComponent<Shapes3DMiniatureScript>().Set3DShape(shape);
-
-        //if (TutorialScript.tutorialActive && shape.shape3DObjectNumber == 5)
-        //{
-        //    newObject.GetComponent<HighlightingSystem.Highlighter>().FlashingOn(Color.green, Color.white, 2.0f);
-        //}
 
         return newObject;
     }

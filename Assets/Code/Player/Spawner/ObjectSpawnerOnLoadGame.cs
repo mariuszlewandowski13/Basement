@@ -49,8 +49,6 @@ public class ObjectSpawnerOnLoadGame : ObjectSpawner
         GameObject colorpicker = (GameObject)GameObject.Instantiate(olObject, new Vector3(), new Quaternion());
         colorpicker.GetComponent<SaveTransformScript>().SetParentObject(newObject);
         colorpicker.transform.FindChild("ColorPicker").gameObject.AddComponent<ColorPickerScript>();
-        //colorpicker.transform.FindChild("Pointer").GetComponent<ColorPickerPointerScript>().SetColorPicker(colorpicker.transform.FindChild("ColorPicker").gameObject);
-        //colorpicker.transform.FindChild("Pointer2").GetComponent<BrightnessPickerScript>().SetColorPicker(colorpicker.transform.FindChild("ColorPicker").gameObject, colorpicker.transform.FindChild("BrightnessPicker").gameObject);
 
         return newObject;
 
@@ -91,43 +89,14 @@ public class ObjectSpawnerOnLoadGame : ObjectSpawner
         GameObject colorpicker = (GameObject)GameObject.Instantiate(olObject, new Vector3(), new Quaternion());
         colorpicker.GetComponent<SaveTransformScript>().SetParentObject(newObject);
         colorpicker.transform.FindChild("ColorPicker").gameObject.AddComponent<ColorPickerScript>();
-        //colorpicker.transform.FindChild("Pointer").GetComponent<ColorPickerPointerScript>().SetColorPicker(colorpicker.transform.FindChild("ColorPicker").gameObject);
-        //colorpicker.transform.FindChild("Pointer2").GetComponent<BrightnessPickerScript>().SetColorPicker(colorpicker.transform.FindChild("ColorPicker").gameObject, colorpicker.transform.FindChild("BrightnessPicker").gameObject);
         colorpicker.name = "ColorPicker";
 
         return newObject;
     }
 
-    public GameObject SpawnBrowserObject(BrowserObject browser)
-    {
-        Object olObject = masterObject.GetComponent<WorldObjects>().browserObject;
-        GameObject newObject = (GameObject)GameObject.Instantiate(olObject, new Vector3(), new Quaternion());
-        newObject.GetComponent<PhotonView>().viewID = browser.PhotonViewID;
-        newObject.GetComponent<PhotonView>().instantiationId = browser.PhotonViewID;
-        newObject.tag = tagName;
-        newObject.name = "BrowserObject";
-        newObject.GetComponent<BrowserScript>().SetBrowserObject(browser);
-        newObject.GetComponent<BrowserScript>().LoadFromImageObject();
-
-        if (newObject.GetComponent<BrowserScript>() != null && ApplicationStaticData.CanInteract())
-        {
-            GameObject olObject2 = masterObject.GetComponent<ToolsObjects>().searchButton;
-            GameObject button = (GameObject)GameObject.Instantiate(olObject2, new Vector3(), new Quaternion());
-            button.GetComponent<SaveTransformScript>().SetParentObject(newObject);
-            button.transform.FindChild("button").GetComponent<BrowserButtonScript>().browser = newObject;
-
-            olObject2 = masterObject.GetComponent<ToolsObjects>().browserBackButton;
-            GameObject button2 = (GameObject)GameObject.Instantiate(olObject2, new Vector3(), new Quaternion());
-            button2.GetComponent<SaveTransformScript>().SetParentObject(newObject);
-            button2.transform.FindChild("button").GetComponent<BrowserButtonScript>().browser = newObject;
-        }
-        return newObject;
-    }
 
     public GameObject SpawnTextObject(TextObject textObject)
     {
-
-        // GameObject newObject = PhotonNetwork.InstantiateSceneObject(textObject.prefabName, new Vector3(), pattern.transform.rotation, 0, null);
         GameObject newObject = (GameObject)GameObject.Instantiate(Resources.Load(textObject.prefabName), new Vector3(), new Quaternion());
         newObject.tag = tagName;
         newObject.name = "TextObject";
@@ -138,8 +107,6 @@ public class ObjectSpawnerOnLoadGame : ObjectSpawner
         GameObject colorpicker = (GameObject)GameObject.Instantiate(olObject,new Vector3(), new Quaternion());
         colorpicker.GetComponent<SaveTransformScript>().SetParentObject(newObject);
         colorpicker.transform.FindChild("ColorPicker").gameObject.AddComponent<ColorPickerScript>();
-        //colorpicker.transform.FindChild("Pointer").GetComponent<ColorPickerPointerScript>().SetColorPicker(colorpicker.transform.FindChild("ColorPicker").gameObject);
-        //colorpicker.transform.FindChild("Pointer2").GetComponent<BrightnessPickerScript>().SetColorPicker(colorpicker.transform.FindChild("ColorPicker").gameObject, colorpicker.transform.FindChild("BrightnessPicker").gameObject);
         colorpicker.name = "ColorPicker";
         colorpicker.transform.rotation = newObject.transform.rotation;
 

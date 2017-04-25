@@ -77,13 +77,11 @@ public class SelectingObjectsScript : MonoBehaviour {
     {
         if ((active || selected) && !highlighted)
         {
-            GetComponent<HighlightingSystem.Highlighter>().ReinitMaterials();
-            GetComponent<HighlightingSystem.Highlighter>().ConstantOn(ApplicationStaticData.objectsHighligthing);
+
                 highlighted = true;
         }
         else if ((!active && !selected) && highlighted)
         {
-            GetComponent<HighlightingSystem.Highlighter>().ConstantOff();
             highlighted = false;
         }
             

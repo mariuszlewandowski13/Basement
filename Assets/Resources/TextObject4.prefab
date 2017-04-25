@@ -75,7 +75,6 @@ GameObject:
   - component: {fileID: 6553310}
   - component: {fileID: 11414696}
   - component: {fileID: 2346578}
-  - component: {fileID: 11416216}
   - component: {fileID: 114820288319623516}
   m_Layer: 8
   m_Name: Top
@@ -149,7 +148,6 @@ GameObject:
   - component: {fileID: 6587624}
   - component: {fileID: 11486870}
   - component: {fileID: 11480460}
-  - component: {fileID: 11446350}
   - component: {fileID: 11496344}
   - component: {fileID: 11449360}
   - component: {fileID: 11476814}
@@ -288,7 +286,6 @@ GameObject:
   - component: {fileID: 2349232}
   - component: {fileID: 11449180}
   - component: {fileID: 6507736}
-  - component: {fileID: 11489002}
   - component: {fileID: 114161368543212596}
   m_Layer: 8
   m_Name: TopLeft
@@ -325,7 +322,6 @@ GameObject:
   - component: {fileID: 2361386}
   - component: {fileID: 11495100}
   - component: {fileID: 6594084}
-  - component: {fileID: 11482036}
   - component: {fileID: 114169957120242150}
   m_Layer: 8
   m_Name: TopRight
@@ -379,7 +375,6 @@ GameObject:
   - component: {fileID: 6558958}
   - component: {fileID: 11452252}
   - component: {fileID: 2314474}
-  - component: {fileID: 11405138}
   - component: {fileID: 114005114743584104}
   m_Layer: 8
   m_Name: Bottom
@@ -557,7 +552,6 @@ GameObject:
   - component: {fileID: 2379458}
   - component: {fileID: 11464772}
   - component: {fileID: 6527756}
-  - component: {fileID: 11495656}
   - component: {fileID: 114565341120404742}
   m_Layer: 8
   m_Name: BottomLeft
@@ -820,7 +814,6 @@ GameObject:
   - component: {fileID: 2346798}
   - component: {fileID: 11480860}
   - component: {fileID: 6561836}
-  - component: {fileID: 11499828}
   - component: {fileID: 114193725397371220}
   m_Layer: 8
   m_Name: BottomRight
@@ -936,7 +929,6 @@ GameObject:
   - component: {fileID: 6516738}
   - component: {fileID: 11406012}
   - component: {fileID: 2353022}
-  - component: {fileID: 11454804}
   - component: {fileID: 114274134866511206}
   m_Layer: 8
   m_Name: Left
@@ -1118,7 +1110,6 @@ GameObject:
   - component: {fileID: 11463170}
   - component: {fileID: 2381386}
   - component: {fileID: 6549126}
-  - component: {fileID: 11491920}
   - component: {fileID: 114668458455590454}
   m_Layer: 8
   m_Name: Right
@@ -3740,18 +3731,6 @@ TextMesh:
   m_Color:
     serializedVersion: 2
     rgba: 4294967295
---- !u!114 &11405138
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 137870}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 956fa3e6ed2d84da48cccbdf5f5461d6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  seeThrough: 0
 --- !u!114 &11406012
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3816,29 +3795,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isSelected: 0
   collision: 0
---- !u!114 &11416216
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 108822}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 956fa3e6ed2d84da48cccbdf5f5461d6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  seeThrough: 0
---- !u!114 &11446350
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 113584}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 67d4de287b46eb34e83a61e4f9115070, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &11449180
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3876,18 +3832,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isSelected: 0
   collision: 0
---- !u!114 &11454804
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 185210}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 956fa3e6ed2d84da48cccbdf5f5461d6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  seeThrough: 0
 --- !u!114 &11463170
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3978,18 +3922,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isSelected: 0
   collision: 0
---- !u!114 &11482036
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 128908}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 956fa3e6ed2d84da48cccbdf5f5461d6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  seeThrough: 0
 --- !u!114 &11486870
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -4004,30 +3936,6 @@ MonoBehaviour:
   active: 0
   treshold: 0.05
   canMove: 0
---- !u!114 &11489002
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 123564}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 956fa3e6ed2d84da48cccbdf5f5461d6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  seeThrough: 0
---- !u!114 &11491920
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 199870}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 956fa3e6ed2d84da48cccbdf5f5461d6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  seeThrough: 0
 --- !u!114 &11495100
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -4041,18 +3949,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isSelected: 0
   collision: 0
---- !u!114 &11495656
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 151468}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 956fa3e6ed2d84da48cccbdf5f5461d6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  seeThrough: 0
 --- !u!114 &11496344
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -4066,18 +3962,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   selected: 0
   active: 0
---- !u!114 &11499828
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 176600}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 956fa3e6ed2d84da48cccbdf5f5461d6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  seeThrough: 0
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1

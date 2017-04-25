@@ -49,11 +49,6 @@ public class PhotoSphereMiniatureWorldScript : MonoBehaviour {
 
     void Update()
     {
-        if (active && GetComponent<HighlightingSystem.Highlighter>() != null)
-        {
-            GetComponent<HighlightingSystem.Highlighter>().SeeThroughOff();
-            GetComponent<HighlightingSystem.Highlighter>().On();
-        }
 
         if (parent == null) noParentDestroy = true;
 
