@@ -1,0 +1,128 @@
+fileFormatVersion: 2
+guid: f2c602c3647e4af45ac16b8788030b99
+timeCreated: 1478613866
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: body_group002
+    100002: //RootNode
+    100004: koncowka
+    100006: l_gripper_group002
+    100008: LED_group002
+    100010: menu_but_group002
+    100012: r_gripper_group002
+    100014: Sphere001
+    100016: sys_but_group1
+    100018: trackpad_
+    100020: trigger_group002
+    100022: zatyczka
+    400000: body_group002
+    400002: //RootNode
+    400004: koncowka
+    400006: l_gripper_group002
+    400008: LED_group002
+    400010: menu_but_group002
+    400012: r_gripper_group002
+    400014: Sphere001
+    400016: sys_but_group1
+    400018: trackpad_
+    400020: trigger_group002
+    400022: zatyczka
+    2300000: body_group002
+    2300002: koncowka
+    2300004: l_gripper_group002
+    2300006: LED_group002
+    2300008: menu_but_group002
+    2300010: r_gripper_group002
+    2300012: Sphere001
+    2300014: sys_but_group1
+    2300016: trackpad_
+    2300018: trigger_group002
+    2300020: zatyczka
+    3300000: body_group002
+    3300002: koncowka
+    3300004: l_gripper_group002
+    3300006: LED_group002
+    3300008: menu_but_group002
+    3300010: r_gripper_group002
+    3300012: Sphere001
+    3300014: sys_but_group1
+    3300016: trackpad_
+    3300018: trigger_group002
+    3300020: zatyczka
+    4300000: body_group002
+    4300002: LED_group002
+    4300004: r_gripper_group002
+    4300006: trackpad_
+    4300008: menu_but_group002
+    4300010: trigger_group002
+    4300012: l_gripper_group002
+    4300014: koncowka
+    4300016: sys_but_group1
+    4300018: zatyczka
+    4300020: Sphere001
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleRotations: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
