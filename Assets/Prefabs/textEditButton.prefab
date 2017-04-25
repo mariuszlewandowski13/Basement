@@ -44,7 +44,6 @@ GameObject:
   - component: {fileID: 404574}
   - component: {fileID: 11472620}
   - component: {fileID: 11464162}
-  - component: {fileID: 11430918}
   - component: {fileID: 6529804}
   m_Layer: 17
   m_Name: button
@@ -230,17 +229,6 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
---- !u!114 &11430918
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 164720}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 67d4de287b46eb34e83a61e4f9115070, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &11450304
 MonoBehaviour:
   m_ObjectHideFlags: 1

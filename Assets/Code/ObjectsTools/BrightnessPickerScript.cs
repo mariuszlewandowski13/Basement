@@ -124,18 +124,12 @@ public class BrightnessPickerScript : MonoBehaviour {
     {
         if (active && !highlighted)
         {
-            if (GetComponent<HighlightingSystem.Highlighter>() != null)
-            {
-                GetComponent<HighlightingSystem.Highlighter>().ConstantOn(ApplicationStaticData.toolsHighligthing);
-            }
+           
             highlighted = true;
         }
         else if (!active && highlighted)
         {
-            if (GetComponent<HighlightingSystem.Highlighter>() != null)
-            {
-                GetComponent<HighlightingSystem.Highlighter>().ConstantOff();
-            }
+           
             highlighted = false;
         }
     }

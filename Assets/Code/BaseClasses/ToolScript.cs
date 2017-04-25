@@ -85,7 +85,7 @@ public class ToolScript : MonoBehaviour {
     {
             if (!highlighted && (GetComponent<ObjectInteractionScript>().GetIsSelected() || GetComponent<ObjectInteractionScript>().GetCollision()) )
             {
-                GetComponent<HighlightingSystem.Highlighter>().ConstantOn(ApplicationStaticData.toolsHighligthing);
+                
                 if (transform.GetChild(0).GetComponent<Animator>() != null && !isPlaying)
                 {
                     transform.GetChild(0).GetComponent<Animator>().StopPlayback();
@@ -95,7 +95,6 @@ public class ToolScript : MonoBehaviour {
             }
             else if(highlighted && (!GetComponent<ObjectInteractionScript>().GetIsSelected() && !GetComponent<ObjectInteractionScript>().GetCollision()) )
         {
-            GetComponent<HighlightingSystem.Highlighter>().ConstantOff();
             if (isPlaying && transform.GetChild(0).GetComponent<Animator>() != null )
                 {
                     transform.GetChild(0).GetComponent<Animator>().StartPlayback();

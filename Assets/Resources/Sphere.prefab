@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 3327870}
   - component: {fileID: 2385946}
   - component: {fileID: 11408284}
-  - component: {fileID: 11456540}
   - component: {fileID: 11435682}
   - component: {fileID: 11408024}
   - component: {fileID: 6506814}
@@ -192,17 +191,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   prevParent: {fileID: 0}
   canDuplicate: 1
---- !u!114 &11456540
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 150328}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 67d4de287b46eb34e83a61e4f9115070, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1

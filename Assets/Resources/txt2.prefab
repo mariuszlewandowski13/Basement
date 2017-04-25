@@ -157,7 +157,6 @@ GameObject:
   - component: {fileID: 2318612}
   - component: {fileID: 6513876}
   - component: {fileID: 11474410}
-  - component: {fileID: 11412422}
   - component: {fileID: 11455632}
   - component: {fileID: 11479790}
   - component: {fileID: 11414336}
@@ -317,7 +316,6 @@ GameObject:
   - component: {fileID: 10294390}
   - component: {fileID: 6514782}
   - component: {fileID: 11438178}
-  - component: {fileID: 11486704}
   - component: {fileID: 11405168}
   - component: {fileID: 11463642}
   - component: {fileID: 11421028}
@@ -344,7 +342,6 @@ GameObject:
   - component: {fileID: 2390476}
   - component: {fileID: 11468042}
   - component: {fileID: 6526818}
-  - component: {fileID: 11431486}
   - component: {fileID: 114021200124147204}
   m_Layer: 8
   m_Name: TopLeft
@@ -431,7 +428,6 @@ GameObject:
   - component: {fileID: 2340532}
   - component: {fileID: 6537388}
   - component: {fileID: 11460202}
-  - component: {fileID: 11423962}
   - component: {fileID: 11406302}
   - component: {fileID: 11414998}
   - component: {fileID: 11402928}
@@ -587,7 +583,6 @@ GameObject:
   - component: {fileID: 2314932}
   - component: {fileID: 11408186}
   - component: {fileID: 6573738}
-  - component: {fileID: 11494986}
   - component: {fileID: 114965879219720610}
   m_Layer: 8
   m_Name: TopRight
@@ -624,7 +619,6 @@ GameObject:
   - component: {fileID: 2352424}
   - component: {fileID: 11438370}
   - component: {fileID: 6507820}
-  - component: {fileID: 11437242}
   - component: {fileID: 114980567300574632}
   m_Layer: 8
   m_Name: BottomRight
@@ -644,7 +638,6 @@ GameObject:
   - component: {fileID: 6591316}
   - component: {fileID: 11459420}
   - component: {fileID: 2339462}
-  - component: {fileID: 11424002}
   - component: {fileID: 114058659880076610}
   m_Layer: 8
   m_Name: Top
@@ -664,7 +657,6 @@ GameObject:
   - component: {fileID: 6528214}
   - component: {fileID: 11449310}
   - component: {fileID: 2358992}
-  - component: {fileID: 11412732}
   - component: {fileID: 114034642158418388}
   m_Layer: 8
   m_Name: Left
@@ -701,7 +693,6 @@ GameObject:
   - component: {fileID: 11448664}
   - component: {fileID: 2385892}
   - component: {fileID: 6520752}
-  - component: {fileID: 11432796}
   - component: {fileID: 114312534766913040}
   m_Layer: 8
   m_Name: Right
@@ -988,7 +979,6 @@ GameObject:
   - component: {fileID: 2386668}
   - component: {fileID: 11427438}
   - component: {fileID: 6526974}
-  - component: {fileID: 11460678}
   - component: {fileID: 114542553716313208}
   m_Layer: 8
   m_Name: BottomLeft
@@ -1155,7 +1145,6 @@ GameObject:
   - component: {fileID: 6533974}
   - component: {fileID: 11439048}
   - component: {fileID: 2324180}
-  - component: {fileID: 11466040}
   - component: {fileID: 114834605623310470}
   m_Layer: 8
   m_Name: Bottom
@@ -2209,7 +2198,6 @@ MeshRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
-  m_SortingLayer: 0
   m_SortingOrder: 0
 --- !u!23 &2307250
 MeshRenderer:
@@ -2241,7 +2229,6 @@ MeshRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
-  m_SortingLayer: 0
   m_SortingOrder: 0
 --- !u!23 &2314932
 MeshRenderer:
@@ -2273,7 +2260,6 @@ MeshRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
-  m_SortingLayer: 0
   m_SortingOrder: 0
 --- !u!23 &2316716
 MeshRenderer:
@@ -2305,7 +2291,6 @@ MeshRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
-  m_SortingLayer: 0
   m_SortingOrder: 0
 --- !u!23 &2318612
 MeshRenderer:
@@ -2337,7 +2322,6 @@ MeshRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
-  m_SortingLayer: 0
   m_SortingOrder: 0
 --- !u!23 &2318738
 MeshRenderer:
@@ -2369,7 +2353,6 @@ MeshRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
-  m_SortingLayer: 0
   m_SortingOrder: 0
 --- !u!23 &2319434
 MeshRenderer:
@@ -2401,7 +2384,6 @@ MeshRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
-  m_SortingLayer: 0
   m_SortingOrder: 0
 --- !u!23 &2320406
 MeshRenderer:
@@ -2433,7 +2415,6 @@ MeshRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
-  m_SortingLayer: 0
   m_SortingOrder: 0
 --- !u!23 &2324064
 MeshRenderer:
@@ -2465,7 +2446,6 @@ MeshRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
-  m_SortingLayer: 0
   m_SortingOrder: 0
 --- !u!23 &2324180
 MeshRenderer:
@@ -2497,7 +2477,6 @@ MeshRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
-  m_SortingLayer: 0
   m_SortingOrder: 0
 --- !u!23 &2329222
 MeshRenderer:
@@ -2529,7 +2508,6 @@ MeshRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
-  m_SortingLayer: 0
   m_SortingOrder: 0
 --- !u!23 &2331514
 MeshRenderer:
@@ -2561,7 +2539,6 @@ MeshRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
-  m_SortingLayer: 0
   m_SortingOrder: 0
 --- !u!23 &2332470
 MeshRenderer:
@@ -2593,7 +2570,6 @@ MeshRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
-  m_SortingLayer: 0
   m_SortingOrder: 0
 --- !u!23 &2335232
 MeshRenderer:
@@ -2625,7 +2601,6 @@ MeshRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
-  m_SortingLayer: 0
   m_SortingOrder: 0
 --- !u!23 &2339462
 MeshRenderer:
@@ -2657,7 +2632,6 @@ MeshRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
-  m_SortingLayer: 0
   m_SortingOrder: 0
 --- !u!23 &2339476
 MeshRenderer:
@@ -2689,7 +2663,6 @@ MeshRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
-  m_SortingLayer: 0
   m_SortingOrder: 0
 --- !u!23 &2340532
 MeshRenderer:
@@ -2721,7 +2694,6 @@ MeshRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
-  m_SortingLayer: 0
   m_SortingOrder: 0
 --- !u!23 &2342346
 MeshRenderer:
@@ -2753,7 +2725,6 @@ MeshRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
-  m_SortingLayer: 0
   m_SortingOrder: 0
 --- !u!23 &2346566
 MeshRenderer:
@@ -2785,7 +2756,6 @@ MeshRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
-  m_SortingLayer: 0
   m_SortingOrder: 0
 --- !u!23 &2349264
 MeshRenderer:
@@ -2817,7 +2787,6 @@ MeshRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
-  m_SortingLayer: 0
   m_SortingOrder: 0
 --- !u!23 &2350640
 MeshRenderer:
@@ -2849,7 +2818,6 @@ MeshRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
-  m_SortingLayer: 0
   m_SortingOrder: 0
 --- !u!23 &2352038
 MeshRenderer:
@@ -2881,7 +2849,6 @@ MeshRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
-  m_SortingLayer: 0
   m_SortingOrder: 0
 --- !u!23 &2352424
 MeshRenderer:
@@ -2913,7 +2880,6 @@ MeshRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
-  m_SortingLayer: 0
   m_SortingOrder: 0
 --- !u!23 &2352558
 MeshRenderer:
@@ -2945,7 +2911,6 @@ MeshRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
-  m_SortingLayer: 0
   m_SortingOrder: 0
 --- !u!23 &2354306
 MeshRenderer:
@@ -2977,7 +2942,6 @@ MeshRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
-  m_SortingLayer: 0
   m_SortingOrder: 0
 --- !u!23 &2357046
 MeshRenderer:
@@ -3009,7 +2973,6 @@ MeshRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
-  m_SortingLayer: 0
   m_SortingOrder: 0
 --- !u!23 &2358916
 MeshRenderer:
@@ -3041,7 +3004,6 @@ MeshRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
-  m_SortingLayer: 0
   m_SortingOrder: 0
 --- !u!23 &2358992
 MeshRenderer:
@@ -3073,7 +3035,6 @@ MeshRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
-  m_SortingLayer: 0
   m_SortingOrder: 0
 --- !u!23 &2360046
 MeshRenderer:
@@ -3105,7 +3066,6 @@ MeshRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
-  m_SortingLayer: 0
   m_SortingOrder: 0
 --- !u!23 &2365688
 MeshRenderer:
@@ -3137,7 +3097,6 @@ MeshRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
-  m_SortingLayer: 0
   m_SortingOrder: 0
 --- !u!23 &2369816
 MeshRenderer:
@@ -3169,7 +3128,6 @@ MeshRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
-  m_SortingLayer: 0
   m_SortingOrder: 0
 --- !u!23 &2370490
 MeshRenderer:
@@ -3201,7 +3159,6 @@ MeshRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
-  m_SortingLayer: 0
   m_SortingOrder: 0
 --- !u!23 &2374942
 MeshRenderer:
@@ -3233,7 +3190,6 @@ MeshRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
-  m_SortingLayer: 0
   m_SortingOrder: 0
 --- !u!23 &2378614
 MeshRenderer:
@@ -3265,7 +3221,6 @@ MeshRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
-  m_SortingLayer: 0
   m_SortingOrder: 0
 --- !u!23 &2379688
 MeshRenderer:
@@ -3297,7 +3252,6 @@ MeshRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
-  m_SortingLayer: 0
   m_SortingOrder: 0
 --- !u!23 &2379928
 MeshRenderer:
@@ -3329,7 +3283,6 @@ MeshRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
-  m_SortingLayer: 0
   m_SortingOrder: 0
 --- !u!23 &2380324
 MeshRenderer:
@@ -3361,7 +3314,6 @@ MeshRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
-  m_SortingLayer: 0
   m_SortingOrder: 0
 --- !u!23 &2384996
 MeshRenderer:
@@ -3393,7 +3345,6 @@ MeshRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
-  m_SortingLayer: 0
   m_SortingOrder: 0
 --- !u!23 &2385892
 MeshRenderer:
@@ -3425,7 +3376,6 @@ MeshRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
-  m_SortingLayer: 0
   m_SortingOrder: 0
 --- !u!23 &2386668
 MeshRenderer:
@@ -3457,7 +3407,6 @@ MeshRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
-  m_SortingLayer: 0
   m_SortingOrder: 0
 --- !u!23 &2388514
 MeshRenderer:
@@ -3489,7 +3438,6 @@ MeshRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
-  m_SortingLayer: 0
   m_SortingOrder: 0
 --- !u!23 &2388682
 MeshRenderer:
@@ -3521,7 +3469,6 @@ MeshRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
-  m_SortingLayer: 0
   m_SortingOrder: 0
 --- !u!23 &2390476
 MeshRenderer:
@@ -3553,7 +3500,6 @@ MeshRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
-  m_SortingLayer: 0
   m_SortingOrder: 0
 --- !u!23 &2397124
 MeshRenderer:
@@ -3585,7 +3531,6 @@ MeshRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
-  m_SortingLayer: 0
   m_SortingOrder: 0
 --- !u!33 &3304418
 MeshFilter:
@@ -4062,29 +4007,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   prevParent: {fileID: 0}
   canDuplicate: 1
---- !u!114 &11412422
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 113888}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 67d4de287b46eb34e83a61e4f9115070, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &11412732
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 146738}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 956fa3e6ed2d84da48cccbdf5f5461d6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  seeThrough: 0
 --- !u!114 &11414336
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -4187,29 +4109,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d46d35552b6b80647ab11ff9076a23ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &11423962
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 126670}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 67d4de287b46eb34e83a61e4f9115070, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &11424002
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 146352}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 956fa3e6ed2d84da48cccbdf5f5461d6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  seeThrough: 0
 --- !u!114 &11427438
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -4223,42 +4122,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isSelected: 0
   collision: 0
---- !u!114 &11431486
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 122272}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 956fa3e6ed2d84da48cccbdf5f5461d6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  seeThrough: 0
---- !u!114 &11432796
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 147586}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 956fa3e6ed2d84da48cccbdf5f5461d6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  seeThrough: 0
---- !u!114 &11437242
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 146040}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 956fa3e6ed2d84da48cccbdf5f5461d6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  seeThrough: 0
 --- !u!114 &11438178
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -4414,18 +4277,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isSelected: 0
   collision: 0
---- !u!114 &11460678
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 171524}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 956fa3e6ed2d84da48cccbdf5f5461d6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  seeThrough: 0
 --- !u!114 &11463642
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -4440,18 +4291,6 @@ MonoBehaviour:
   active: 0
   treshold: 0.05
   canMove: 0
---- !u!114 &11466040
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 196376}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 956fa3e6ed2d84da48cccbdf5f5461d6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  seeThrough: 0
 --- !u!114 &11468042
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -4518,29 +4357,6 @@ MonoBehaviour:
   instantiationId: -1
   currentMasterID: -1
   isRuntimeInstantiated: 0
---- !u!114 &11486704
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 120776}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 67d4de287b46eb34e83a61e4f9115070, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &11494986
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 144062}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 956fa3e6ed2d84da48cccbdf5f5461d6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  seeThrough: 0
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1

@@ -14,8 +14,5 @@ public class ToolsObjects : MonoBehaviour
     public GameObject drawingObject;
     public GameObject editButton;
     public GameObject deleteButton;
-    public GameObject searchButton;
-    public GameObject browserBackButton;
-
     #endregion
 }

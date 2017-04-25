@@ -13,7 +13,6 @@ GameObject:
   - component: {fileID: 6513786}
   - component: {fileID: 11462580}
   - component: {fileID: 11436534}
-  - component: {fileID: 11428338}
   - component: {fileID: 11450824}
   - component: {fileID: 11468472}
   - component: {fileID: 11432268}
@@ -70,7 +69,6 @@ MeshRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
-  m_SortingLayer: 0
   m_SortingOrder: 0
 --- !u!33 &3385670
 MeshFilter:
@@ -91,17 +89,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 0.9999998, z: 0.000000119209275}
   m_Center: {x: -0.0000019073486, y: 0, z: 0}
---- !u!114 &11428338
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 162430}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 67d4de287b46eb34e83a61e4f9115070, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &11432268
 MonoBehaviour:
   m_ObjectHideFlags: 1

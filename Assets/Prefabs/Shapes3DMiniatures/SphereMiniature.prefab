@@ -14,7 +14,6 @@ GameObject:
   - component: {fileID: 11486636}
   - component: {fileID: 11488566}
   - component: {fileID: 11472122}
-  - component: {fileID: 11496492}
   - component: {fileID: 11414932}
   m_Layer: 10
   m_Name: SphereMiniature
@@ -144,17 +143,6 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 02dc93b695472424ba85a42545ebc1a1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &11496492
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 105904}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 67d4de287b46eb34e83a61e4f9115070, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1001 &100100000

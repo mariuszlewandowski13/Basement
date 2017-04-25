@@ -47,12 +47,12 @@ public class TextEditButtonScript : MonoBehaviour {
     {
         if (!highlighted && (GetComponent<ObjectInteractionScript>().GetIsSelected() || GetComponent<ObjectInteractionScript>().GetCollision()))
         {
-            GetComponent<HighlightingSystem.Highlighter>().ConstantOn(ApplicationStaticData.toolsHighligthing);
+            
             highlighted = true;
         }
         else if (highlighted && (!GetComponent<ObjectInteractionScript>().GetIsSelected() && !GetComponent<ObjectInteractionScript>().GetCollision()))
         {
-            GetComponent<HighlightingSystem.Highlighter>().ConstantOff();
+           
             highlighted = false;
         }
     }

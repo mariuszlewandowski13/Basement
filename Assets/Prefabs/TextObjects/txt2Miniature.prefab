@@ -66,7 +66,6 @@ GameObject:
   - component: {fileID: 11454718}
   - component: {fileID: 6583016}
   - component: {fileID: 11476160}
-  - component: {fileID: 11405246}
   - component: {fileID: 11476122}
   m_Layer: 10
   m_Name: txt2Miniature
@@ -329,17 +328,6 @@ TextMesh:
   m_Color:
     serializedVersion: 2
     rgba: 4294967295
---- !u!114 &11405246
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 161224}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 67d4de287b46eb34e83a61e4f9115070, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &11454718
 MonoBehaviour:
   m_ObjectHideFlags: 1

@@ -13,7 +13,6 @@ GameObject:
   - component: {fileID: 6526010}
   - component: {fileID: 11430528}
   - component: {fileID: 11480204}
-  - component: {fileID: 11407164}
   - component: {fileID: 11401008}
   - component: {fileID: 11419856}
   - component: {fileID: 11403558}
@@ -70,7 +69,6 @@ MeshRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
-  m_SortingLayer: 0
   m_SortingOrder: 0
 --- !u!33 &3322586
 MeshFilter:
@@ -130,17 +128,6 @@ MonoBehaviour:
   instantiationId: -1
   currentMasterID: -1
   isRuntimeInstantiated: 0
---- !u!114 &11407164
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 171558}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 67d4de287b46eb34e83a61e4f9115070, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &11419856
 MonoBehaviour:
   m_ObjectHideFlags: 1

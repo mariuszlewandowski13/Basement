@@ -9,10 +9,6 @@ using System;
 [RequireComponent(typeof(WorldObjects))]
 public class SaveLoadManager : MonoBehaviour {
     #region Private Properties
-
-    //private string savePath = /*Application.dataPath + "/media/saved"*/"Assets/Saved/";
-    ////private string savePath = /*Application.dataPath + "/media/saved"*/"C:/files/Assets/Saved/";
-    //public string fileName = "saved.txt";
     public static bool isLoaded;
 
     #endregion
@@ -33,14 +29,8 @@ public class SaveLoadManager : MonoBehaviour {
     public void LoadGame()
     {
             LoadManager.LoadFromServer(gameObject);
-           // LoadManager.Load(GetFileFullPath(), gameObject);
         
     }
-
-    //private string GetFileFullPath()
-    //{
-    //    return savePath + fileName;
-    //}
     #endregion
 
 }

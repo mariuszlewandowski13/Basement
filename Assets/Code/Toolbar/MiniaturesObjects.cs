@@ -11,7 +11,6 @@ public class MiniaturesObjects : MonoBehaviour {
 
     public GameObject imageMiniature;
     public GameObject shapeMiniature;
-    public GameObject audioMiniature;
     public GameObject photoSphereMiniature;
     public GameObject markerMiniature;
 

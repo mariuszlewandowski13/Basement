@@ -86,7 +86,6 @@ GameObject:
   - component: {fileID: 4000012586606300}
   - component: {fileID: 65000013364900792}
   - component: {fileID: 114000013894439110}
-  - component: {fileID: 114000010311381412}
   - component: {fileID: 114000012514336434}
   m_Layer: 10
   m_Name: search_google
@@ -269,17 +268,6 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
---- !u!114 &114000010311381412
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1000014170831416}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 67d4de287b46eb34e83a61e4f9115070, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &114000012514336434
 MonoBehaviour:
   m_ObjectHideFlags: 1
