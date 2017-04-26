@@ -29,18 +29,12 @@ public class ConnectAndJoinRandom : Photon.MonoBehaviour
 
 
     #region Methods
-
-    public virtual void Start()
-    {
-    }
-
     public virtual void Update()
     {
 
 
         if (ConnectInUpdate && AutoConnect && !PhotonNetwork.connected && SaveLoadManager.isLoaded)
         {
-
             ConnectInUpdate = false;
             PhotonNetwork.ConnectUsingSettings(Version + "." + SceneManagerHelper.ActiveSceneBuildIndex);
         }

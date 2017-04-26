@@ -51,8 +51,6 @@ public class TeleportVive : MonoBehaviour {
 
     private Mesh PlaneMesh;
 
-    private bool loadScene;
-
     public bool PlayerInTheWorld {
         get { if (ApplicationStaticData.roomToConnectName == ApplicationStaticData.worldRoomName) return true;
             else return false;
