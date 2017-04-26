@@ -31,8 +31,6 @@ public class ConnectAndJoinRandom : Photon.MonoBehaviour
     #region Methods
     public virtual void Update()
     {
-
-
         if (ConnectInUpdate && AutoConnect && !PhotonNetwork.connected && SaveLoadManager.isLoaded)
         {
             ConnectInUpdate = false;
@@ -141,6 +139,12 @@ public virtual void OnReceivedRoomListUpdate()
             {
             { "Region", PhotonNetwork.networkingPeer.CloudRegion },
           });
+    }
+
+    public void PrepareForReconnect()
+    {
+        ConnectInUpdate = true;
+        loaded = false;
     }
 
     #endregion

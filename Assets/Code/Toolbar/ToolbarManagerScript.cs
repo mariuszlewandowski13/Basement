@@ -17,6 +17,7 @@ public class ToolbarManagerScript : MonoBehaviour {
     public GameObject Shapes3DIcon;
     public GameObject textsIcon;
     public GameObject googleIcon;
+    public GameObject teleport;
 
     public GameObject keyboard;
 
@@ -70,7 +71,7 @@ public class ToolbarManagerScript : MonoBehaviour {
 
     private void CreateToolsObjects()
     {
-        toolsObjects = new ToolsButtons[7];
+        toolsObjects = new ToolsButtons[8];
     }
 
     private void FillToolsObjects()
@@ -89,6 +90,7 @@ public class ToolbarManagerScript : MonoBehaviour {
         toolsObjects[4] = new ToolsButtons(table8, Shapes3DIcon, true, true,4);
         toolsObjects[5] = new ToolsButtons(table7, textsIcon, true, true,5);
         toolsObjects[6] = new ToolsButtons(null, googleIcon, false, true,6, 2);
+        toolsObjects[7] = new ToolsButtons(null, teleport, false, false, 9, 1);
     }
 
     private SceneObject[] LoadImages()

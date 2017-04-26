@@ -29,8 +29,10 @@ public class ToolsButtons : ToolsObject {
     public event SceneObjectsLoaded newSceneObjectsList;
 
     private bool searchGoogle;
+    private bool teleport;
 
     private object searchGoogleLock = new object();
+    private object teleportLock = new object();
     #endregion
 
     #region Constructors
@@ -89,9 +91,13 @@ public class ToolsButtons : ToolsObject {
         {
             keyboard.GetComponent<KeyboardScript>().NewCharAdded -= OnCharAdded;
             
-             if (sourceForSceneObjects == 2)
+           if (sourceForSceneObjects == 2)
             {
                 SearchGoogle();
+            }
+            if (sourceForSceneObjects == 1)
+            {
+                Teleport();
             }
 
         }
@@ -117,6 +123,19 @@ public class ToolsButtons : ToolsObject {
         }
     }
 
+    public void Teleport()
+    {
+        lock (teleportLock)
+        {
+            teleport = true;
+            KeyboardHandlerScript.CloseKeyBoard();
+            KeyboardHandlerScript.CloseSearchBox();
+
+            GameObject.Find("Player").transform.FindChild("Toolbar").GetComponent<TeleportScript>().canTeleportChecked += CanTeleport;
+            GameObject.Find("Player").transform.FindChild("Toolbar").GetComponent<TeleportScript>().CheckCanTeleport(searchText);
+        }
+    }
+
     public void GetResultGoogle()
     {
         lock (searchGoogleLock)
@@ -132,6 +151,24 @@ public class ToolsButtons : ToolsObject {
         }
     }
 
+    public void CanTeleport(bool canTeleport)
+    {
+        lock (teleportLock)
+        {
+            if (teleport)
+            {
+                teleport = false;
+                GameObject.Find("Player").transform.FindChild("Toolbar").GetComponent<TeleportScript>().canTeleportChecked -= CanTeleport;
+                GameObject.Find("Player").transform.FindChild("Toolbar").GetComponent<ToolbarManagerScript>().MainBar();
+
+                if (canTeleport)
+                {
+                    GameObject.Find("Player").transform.FindChild("Toolbar").GetComponent<TeleportScript>().StartTeleport();
+                }
+            }
+        }
+    }
+
     public void AbortSearching()
     {
         lock(searchGoogleLock)
@@ -140,6 +177,15 @@ public class ToolsButtons : ToolsObject {
             {
                 searchGoogle = false;
                 GameObject.Find("Player").transform.FindChild("Toolbar").GetComponent<GoogleCustomSearch>().resultReady -= GetResultGoogle;
+            }
+        }
+
+        lock (teleportLock)
+        {
+            if (teleport)
+            {
+                teleport = false;
+                GameObject.Find("Player").transform.FindChild("Toolbar").GetComponent<TeleportScript>().canTeleportChecked -= CanTeleport;
             }
         }
     }

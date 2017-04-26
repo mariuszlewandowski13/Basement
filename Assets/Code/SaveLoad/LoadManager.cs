@@ -113,15 +113,16 @@ public static class LoadManager {
         return GameObject.FindGameObjectsWithTag(ObjectSpawner.tagName);
     }
 
-    private static void ClearEnviroment()
+    public static void ClearEnviroment()
     {
         GameObject[] objectsToDestroy = FindAllObjects();
-
-        foreach (GameObject gameObject in objectsToDestroy)
+        
+        foreach (GameObject gameObject2 in objectsToDestroy)
         {
-            GameObject.Destroy(gameObject);
+            GameObject.Destroy(gameObject2);
 
         }
+        SaveLoadManager.isLoaded = false;
     }
 
     private static void LoadImage(string [] row)

@@ -8,7 +8,7 @@ public class OnLoadRoomLoadingScript : MonoBehaviour {
 
     #region Private Properties
 
-    private bool created = false;
+    public bool created = false;
 
     private bool controllersLoaded;
 

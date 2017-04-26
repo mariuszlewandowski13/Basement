@@ -28,8 +28,13 @@ public class SaveLoadManager : MonoBehaviour {
 
     public void LoadGame()
     {
-            LoadManager.LoadFromServer(gameObject);
+      LoadManager.LoadFromServer(gameObject);
         
+    }
+
+    public void ClearEnviroment()
+    {
+        LoadManager.ClearEnviroment();
     }
     #endregion
 

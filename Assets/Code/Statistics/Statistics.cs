@@ -12,8 +12,7 @@ public static class Statistics  {
     {
         if (number < StaticticsFields.Count)
         {
-            string sql = "UPDATE STATISTICS SET " + StaticticsFields[number] + " = " + StaticticsFields[number] + " + 1 WHERE USER_STEAM_ID = '" + ApplicationStaticData.userID + "'";
-            GameObject.Find("Player").GetComponent<DatabaseHandler>().ExequteSQL(sql);
+            GameObject.Find("Player").GetComponent<DatabaseHandler>().UpdateStats(StaticticsFields[number], ApplicationStaticData.userID);
         }
         
     }
