@@ -24,16 +24,15 @@ public class ServerSaveLoadScript : MonoBehaviour {
     #region Methods
 
 
-    public void LoadDb(ResultMethod f, string roomName)   // WITH CHAT MG
+    public void LoadDb(ResultMethod f, string roomName)   
     {
         WWWForm form = new WWWForm();
-        string sqlCommand = "SELECT * FROM " + roomName;
-        form.AddField("sqlCommand", sqlCommand);
-        WWW w = new WWW("http://serwer1642668.home.pl/BASEMENT/scripts/GetRooms.php", form);
+        form.AddField("room", roomName);
+        WWW w = new WWW("http://serwer1642668.home.pl/BASEMENT/scripts/GetRoomsOS.php", form);
         StartCoroutine(loader(w, f));
     }
 
-    public void LoadLinesFile(LineObject lineObject, string filename, EndCreateLines line)   // WITH CHAT MG
+    public void LoadLinesFile(LineObject lineObject, string filename, EndCreateLines line)   
     {
         WWWForm form = new WWWForm();
         form.AddField("filename", filename);
@@ -41,18 +40,18 @@ public class ServerSaveLoadScript : MonoBehaviour {
         StartCoroutine(LineLoader(w, line, lineObject));
     }
 
-    public void InsertIntoDatabase(string roomName, string values)   // WITH CHAT MG
+    public void InsertIntoDatabase(string roomName, string values)  
     {
         WWWForm form = new WWWForm();
-        string sqlCommand = "INSERT INTO " + roomName + "  VALUES (" + values + ", "+ GetAdditionalInsertionData() +")";
-        //Debug.Log(sqlCommand);
-        form.AddField("sqlCommand", sqlCommand);
+        string values2 = values + ", "+ GetAdditionalInsertionData();
+        form.AddField("values", values2);
         form.AddField("room", roomName);
-        WWW w = new WWW("http://serwer1642668.home.pl/BASEMENT/scripts/SaveChanges.php", form);
+        form.AddField("operation", 0);
+        WWW w = new WWW("http://serwer1642668.home.pl/BASEMENT/scripts/SaveChangesOS.php", form);
         StartCoroutine(request(w));
     }
 
-    public void SendJSONPoints(string JSON, string filename)   // WITH CHAT MG
+    public void SendJSONPoints(string JSON, string filename)   
     {
         WWWForm form = new WWWForm();
 
@@ -62,25 +61,25 @@ public class ServerSaveLoadScript : MonoBehaviour {
         StartCoroutine(request(w));
     }
 
-    public void UpdateInDatabase(string roomName, string values, int photonView)   // WITH CHAT MG
+    public void UpdateInDatabase(string roomName, string values, int photonView)   
     {
         WWWForm form = new WWWForm();
-        string sqlCommand = "UPDATE " + roomName + "  SET " + values + " WHERE PHOTON_VIEW_ID = " + photonView.ToString();
-        //Debug.Log(sqlCommand);
-        form.AddField("sqlCommand", sqlCommand);
-        WWW w = new WWW("http://serwer1642668.home.pl/BASEMENT/scripts/SaveChanges.php", form);
+        form.AddField("values", values);
+        form.AddField("room", roomName);
+        form.AddField("ID", photonView.ToString());
+        form.AddField("operation", 1);
+        WWW w = new WWW("http://serwer1642668.home.pl/BASEMENT/scripts/SaveChangesOS.php", form);
         StartCoroutine(request(w));
     }
 
-    public void RemoveFromDatabase(string roomName, int photonView, string filename = "")   // WITH CHAT MG
+    public void RemoveFromDatabase(string roomName, int photonView, string filename = "")   
     {
         WWWForm form = new WWWForm();
-        //Debug.Log("Destroy " + photonView);
-        string sqlCommand = "DELETE FROM " + roomName + " WHERE PHOTON_VIEW_ID = " + photonView.ToString();
-        form.AddField("sqlCommand", sqlCommand);
+
+        form.AddField("ID", photonView.ToString());
         form.AddField("filename", filename);
         form.AddField("room", roomName);
-        WWW w = new WWW("http://serwer1642668.home.pl/BASEMENT/scripts/RemoveFromDb.php", form);
+        WWW w = new WWW("http://serwer1642668.home.pl/BASEMENT/scripts/RemoveFromDbOS.php", form);
         StartCoroutine(request(w));
     }
 
@@ -97,6 +96,7 @@ public class ServerSaveLoadScript : MonoBehaviour {
             message = "ERROR: " + w.error + "\n";
         }
 
+        Debug.Log(message);
         string[] msg = null;
         string[] res = null;
 
@@ -125,7 +125,7 @@ public class ServerSaveLoadScript : MonoBehaviour {
             message = "ERROR: " + w.error + "\n";
         }
 
-       // Debug.Log(message);  
+        Debug.Log(message);  
     }
 
     IEnumerator LineLoader(WWW w, EndCreateLines f, LineObject lineObj)

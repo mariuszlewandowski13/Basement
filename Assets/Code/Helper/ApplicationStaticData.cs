@@ -41,6 +41,8 @@ public static class ApplicationStaticData {
     static public Color toolsHighligthing = Color.red;
     static public Color doorsHighligthing = Color.red;
 
+#if UNITY_EDITOR
+
     static public string imagesPath = "C:/files/";
     static public string tagsPath = "C:/files/";
     static public string shapesPath = "C:/files/Shapes/";
@@ -48,15 +50,18 @@ public static class ApplicationStaticData {
     static public string photoSpheresPath = "C:/files/PhotoSphere/";
     static public string userImagesPath = "C:/files/userImages/";
     static public string screenshotsPath = "C:/screenshots/";
-    static public bool adminMode = false;
 
-    //static public string imagesPath = Application.dataPath + "/media/appData/images/";
-    //static public string tagsPath = Application.dataPath + "/media/appData/images/";
-    //static public string shapesPath = Application.dataPath + "/media/appData/shapes/";
-    //static public string gridsPath = Application.dataPath + "/media/appData/shapes/";
-    //static public string photoSpheresPath = Application.dataPath + "/media/appData/sfery/";
-    //static public string userImagesPath = Application.dataPath + "/media/upload/";
-    //static public string screenshotsPath = Application.dataPath + "/media/screenshots/";
+#elif UNITY_STANDALONE
+    static public string imagesPath = Application.dataPath + "/media/appData/images/";
+    static public string tagsPath = Application.dataPath + "/media/appData/images/";
+    static public string shapesPath = Application.dataPath + "/media/appData/shapes/";
+    static public string gridsPath = Application.dataPath + "/media/appData/shapes/";
+    static public string photoSpheresPath = Application.dataPath + "/media/appData/sfery/";
+    static public string userImagesPath = Application.dataPath + "/media/upload/";
+    static public string screenshotsPath = Application.dataPath + "/media/screenshots/";
+#endif
+
+    static public bool adminMode = true;
     #endregion
 
     #region Private Properties

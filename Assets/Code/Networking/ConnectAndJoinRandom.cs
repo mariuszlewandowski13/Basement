@@ -123,12 +123,9 @@ public virtual void OnReceivedRoomListUpdate()
 
     private void SendRoomEnteredToDatabase()
     {
-        string sql = "UPDATE ROOMS SET VIEWS_COUNT = VIEWS_COUNT + 1 WHERE NAME = '" + ApplicationStaticData.roomToConnectName + "'";
-        string sql2 = "UPDATE APP_USERS SET OTHERS_ROOMS_VIEWS = OTHERS_ROOMS_VIEWS + 1 WHERE USER_STEAM_ID = '" + ApplicationStaticData.userID + "'";
         if (GetComponent<DatabaseHandler>() != null)
         {
-            GetComponent<DatabaseHandler>().ExequteSQL(sql);
-            GetComponent<DatabaseHandler>().ExequteSQL(sql2);
+            GetComponent<DatabaseHandler>().UpdateUserRoomEntered(ApplicationStaticData.userID, ApplicationStaticData.roomToConnectName);
         }
 
     }

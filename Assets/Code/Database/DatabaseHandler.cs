@@ -5,11 +5,12 @@ public class DatabaseHandler: MonoBehaviour{
 
     private string message;
 
-    public void ExequteSQL(string sql)  
+    public void UpdateUserRoomEntered(string ID, string roomEnteredName)
     {
         WWWForm form = new WWWForm();
-        form.AddField("sqlCommand", sql);
-        WWW w = new WWW("http://serwer1642668.home.pl/BASEMENT/scripts/ExecuteSQL.php", form);
+        form.AddField("ID", ID);
+        form.AddField("room", roomEnteredName);
+        WWW w = new WWW("http://serwer1642668.home.pl/BASEMENT/scripts/UpdateRoomEntered.php", form);
         StartCoroutine(request(w));
     }
 

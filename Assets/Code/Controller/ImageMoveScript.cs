@@ -150,7 +150,8 @@ public class ImageMoveScript : MonoBehaviour
             {
                 DestroyObjectAndChildrenColliders(scaleHandler);
             }
-            Destroy(gameObject, 5.0f);
+            Destroy(gameObject, 2.0f);
+            SaveManager.DeleteFromDatabase(GetComponent<PhotonView>().viewID);
         }
         
     }
