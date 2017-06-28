@@ -41,6 +41,9 @@ public static class ApplicationStaticData {
     static public Color toolsHighligthing = Color.red;
     static public Color doorsHighligthing = Color.red;
 
+    public static string serverScriptsPath = "http://vrowser.e-kei.pl/BasementVR/scripts/";
+
+
 #if UNITY_EDITOR
 
     static public string imagesPath = "C:/files/";

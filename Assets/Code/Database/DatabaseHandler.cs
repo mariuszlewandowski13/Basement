@@ -10,7 +10,7 @@ public class DatabaseHandler: MonoBehaviour{
         WWWForm form = new WWWForm();
         form.AddField("ID", ID);
         form.AddField("room", roomEnteredName);
-        WWW w = new WWW("http://serwer1642668.home.pl/BASEMENT/scripts/UpdateRoomEntered.php", form);
+        WWW w = new WWW(ApplicationStaticData.serverScriptsPath + "UpdateRoomEntered.php", form);
         StartCoroutine(request(w));
     }
 
@@ -19,7 +19,7 @@ public class DatabaseHandler: MonoBehaviour{
         WWWForm form = new WWWForm();
         form.AddField("field", field);
         form.AddField("user", userName);
-        WWW w = new WWW("http://serwer1642668.home.pl/BASEMENT/scripts/UpdateStats.php", form);
+        WWW w = new WWW(ApplicationStaticData.serverScriptsPath + "UpdateStats.php", form);
         StartCoroutine(request(w));
     }
 

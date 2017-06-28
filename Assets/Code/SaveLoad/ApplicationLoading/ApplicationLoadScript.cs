@@ -95,7 +95,7 @@ public class ApplicationLoadScript : MonoBehaviour {
         WWWForm form = new WWWForm();
         form.AddField("userID", ApplicationStaticData.userID);
         form.AddField("userName", ApplicationStaticData.userName);
-        WWW w = new WWW("http://serwer1642668.home.pl/BASEMENT/scripts/GetUserData.php", form);
+        WWW w = new WWW(ApplicationStaticData.serverScriptsPath + "GetUserData.php", form);
         StartCoroutine(loadUserDataFromDb(w));
     }
 
@@ -170,7 +170,7 @@ public class ApplicationLoadScript : MonoBehaviour {
     {
         WWWForm form = new WWWForm();
         form.AddField("userID", ApplicationStaticData.userID);
-        WWW w = new WWW("http://serwer1642668.home.pl/BASEMENT/scripts/GetUserImagesInfo.php", form);
+        WWW w = new WWW(ApplicationStaticData.serverScriptsPath + "GetUserImagesInfo.php", form);
         StartCoroutine(GetUserImagesInfoFromServer(w));
     }
 
@@ -261,7 +261,7 @@ public class ApplicationLoadScript : MonoBehaviour {
         byte [] bytes = File.ReadAllBytes(ApplicationStaticData.userImagesPath + img.name);
         form.AddBinaryData("file", bytes, img.name, "image/" + img.extension);
 
-        WWW w = new WWW("http://serwer1642668.home.pl/BASEMENT/scripts/SaveImageFile.php", form);
+        WWW w = new WWW(ApplicationStaticData.serverScriptsPath + "SaveImageFile.php", form);
         StartCoroutine(sendRequest(w));
     }
 
@@ -271,7 +271,7 @@ public class ApplicationLoadScript : MonoBehaviour {
         WWWForm form = new WWWForm();
         form.AddField("userID", ApplicationStaticData.userID);
         form.AddField("filename", img.name);
-        WWW w = new WWW("http://serwer1642668.home.pl/BASEMENT/scripts/RemoveImageFile.php", form);
+        WWW w = new WWW(ApplicationStaticData.serverScriptsPath + "RemoveImageFile.php", form);
         StartCoroutine(removeRequest(w));
     }
 

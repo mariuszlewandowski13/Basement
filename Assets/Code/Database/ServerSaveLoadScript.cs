@@ -28,7 +28,7 @@ public class ServerSaveLoadScript : MonoBehaviour {
     {
         WWWForm form = new WWWForm();
         form.AddField("room", roomName);
-        WWW w = new WWW("http://serwer1642668.home.pl/BASEMENT/scripts/GetRoomsOS.php", form);
+        WWW w = new WWW(ApplicationStaticData.serverScriptsPath + "GetRoomsOS.php", form);
         StartCoroutine(loader(w, f));
     }
 
@@ -36,7 +36,7 @@ public class ServerSaveLoadScript : MonoBehaviour {
     {
         WWWForm form = new WWWForm();
         form.AddField("filename", filename);
-        WWW w = new WWW("http://serwer1642668.home.pl/BASEMENT/scripts/GetFileAsString.php", form);
+        WWW w = new WWW(ApplicationStaticData.serverScriptsPath + "GetFileAsString.php", form);
         StartCoroutine(LineLoader(w, line, lineObject));
     }
 
@@ -47,7 +47,7 @@ public class ServerSaveLoadScript : MonoBehaviour {
         form.AddField("values", values2);
         form.AddField("room", roomName);
         form.AddField("operation", 0);
-        WWW w = new WWW("http://serwer1642668.home.pl/BASEMENT/scripts/SaveChangesOS.php", form);
+        WWW w = new WWW(ApplicationStaticData.serverScriptsPath + "SaveChangesOS.php", form);
         StartCoroutine(request(w));
     }
 
@@ -57,7 +57,7 @@ public class ServerSaveLoadScript : MonoBehaviour {
 
         form.AddField("filename", filename);
         form.AddField("JSON", JSON);
-        WWW w = new WWW("http://serwer1642668.home.pl/BASEMENT/scripts/CreateLineFile.php", form);
+        WWW w = new WWW(ApplicationStaticData.serverScriptsPath + "CreateLineFile.php", form);
         StartCoroutine(request(w));
     }
 
@@ -68,7 +68,7 @@ public class ServerSaveLoadScript : MonoBehaviour {
         form.AddField("room", roomName);
         form.AddField("ID", photonView.ToString());
         form.AddField("operation", 1);
-        WWW w = new WWW("http://serwer1642668.home.pl/BASEMENT/scripts/SaveChangesOS.php", form);
+        WWW w = new WWW(ApplicationStaticData.serverScriptsPath + "SaveChangesOS.php", form);
         StartCoroutine(request(w));
     }
 
@@ -79,7 +79,7 @@ public class ServerSaveLoadScript : MonoBehaviour {
         form.AddField("ID", photonView.ToString());
         form.AddField("filename", filename);
         form.AddField("room", roomName);
-        WWW w = new WWW("http://serwer1642668.home.pl/BASEMENT/scripts/RemoveFromDbOS.php", form);
+        WWW w = new WWW(ApplicationStaticData.serverScriptsPath + "RemoveFromDbOS.php", form);
         StartCoroutine(request(w));
     }
 
